@@ -17,13 +17,7 @@ win32 {
     DEFINES += _WINDOWS WIN32_LEAN_AND_MEAN NOMINMAX
 }
 
-
-DESTDIR      = $$PRJDIR/xbin
-MOC_DIR      = $$TEMPDIR
-OBJECTS_DIR  = $$TEMPDIR
-RCC_DIR      = $$TEMPDIR
-UI_DIR       = $$TEMPDIR/Ui
-LIBS        += -L$$PRJDIR/xbin
+LIBS        += -L$$DESTDIR
 
 INCLUDEPATH +=  . $$PRJDIR/src $$PRJDIR/3rdparty
 
